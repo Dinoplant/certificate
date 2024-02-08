@@ -14,7 +14,7 @@ body{
 }
 
 .leftside{
-    width:25%;
+    width:15%;
     background-color: lightgray;
     display: flex;
     flex-flow:wrap column;
@@ -22,12 +22,56 @@ body{
 }
 
 .rightside{
-    width: 75%;
+    width: 85%;
     background-color: darkgray;
 }
 
 #internet{
-    width:1066px;
-    height:822px;
-    background-image: url(/images/download.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width: 1373px;
+    height:1062px;
+    background-image: url(/images/internet-v2.png);
+}
+
+.internet-top{
+font-size: x-large;
+display: flex;
+justify-content: center;
+}
+
+.internet-mid{
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.internet-mid>h2{
+    font-size: xx-large;
+}
+.internet-bot{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+font-size: x-large;
+}
+
+.dino-image{
+    width:418px;
+    height:414px;
+}
+
+.internet-bot-date{
+    width:177.3px;
+}
+
+.internet-bot-sign, .internet-bot-date{
+    display: flex;
+    justify-content: center;
 }

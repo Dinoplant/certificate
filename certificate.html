@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
+    <link rel="stylesheet" href="certificate.css">
 </head>
+
 <body>
-    
-<h1>Make your Certificate</h1>
-<section class="page wrapper">
 
-<section id="certificate" class="certificate">
-<span id="name"></span>
-</section>
+    <h1>Make your Certificate</h1>
+    <section class="pagewrapper">
+        <section class="leftside">
+            <section id="certificate" class="certificate">
+                <span id="name"></span>
+            </section>
+            <section class="form">
+                <form action="" id="myForm">
+                    <input type="text" name="name" id="name" placeholder="Enter Name Here">
 
-</section>
+                    <select name="type" id="type">
+                        <option value="Skill">Skill Issue</option>
+                        <option value="Comedian">Unintentional Comedian</option>
+                        <option value="Internet">Internet User</option>
+                    </select>
+                    <input type="submit" value="Generate">
+                </form>
+            </section>
+
+        </section>
+
+        <section class="rightside">
+            <section id="skill">
+                <section></section>
+                <section></section>
+                <section></section>
+            </section>
+            <section id="comedian">
+                <section></section>
+                <section></section>
+                <section></section>
+            </section>
+            <section id="internet">
+                <section><p>a</p></section>
+                <section></section>
+                <section></section>
+            </section>
+        </section>
+    </section>
 </body>
+
 </html>

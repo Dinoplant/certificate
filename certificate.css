@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.pagewrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    
+}
+
+.leftside{
+    width:25%;
+    background-color: lightgray;
+    display: flex;
+    flex-flow:wrap column;
+
+}
+
+.rightside{
+    width: 75%;
+    background-color: darkgray;
+}
+
+#internet{
+    width:1066px;
+    height:822px;
+    background-image: url(/images/download.png);
+}

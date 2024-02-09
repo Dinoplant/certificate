@@ -38,7 +38,7 @@ body{
 }
 
 .internet-top{
-font-size: x-large;
+font-size: 30px;
 display: flex;
 justify-content: center;
 }
@@ -50,13 +50,13 @@ justify-content: center;
     align-items: center;
 }
 
-.internet-mid>h2{
-    font-size: xx-large;
+.internet-mid>span{
+    font-size: 35px;
 }
 .internet-bot{
     width: 1000px;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     justify-content: space-around;
 font-size: x-large;
@@ -74,4 +74,8 @@ font-size: x-large;
 .internet-bot-sign, .internet-bot-date{
     display: flex;
     justify-content: center;
+    background-image: url(/images/line.png);
+    background-size: 207px;
+    background-position: 188px 3px;
+
 }

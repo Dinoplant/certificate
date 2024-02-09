@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
-    <link rel="stylesheet" href="certificate.css">
+    <link rel="stylesheet" href="certificate.css"> 
+    <script href="certificate.js"></script>
 </head>
 
 <body>
@@ -13,12 +14,12 @@
     <h1>Make your Certificate</h1>
     <section class="pagewrapper">
         <section class="leftside">
-            <section id="certificate" class="certificate">
-                <span id="name"></span>
-            </section>
+            <!-- <section id="certificate" class="certificate">
+                <span id="name"> </span>
+            </section> -->
             <section class="form">
                 <form action="" id="myForm">
-                    <input type="text" name="name" id="name" placeholder="Enter Name Here">
+                     <input type="text" name="name" id="name" placeholder="Enter Name Here"> <!--text box for name -->
 
                     <select name="type" id="type">
                         <option value="Skill">Skill Issue</option>
@@ -26,6 +27,7 @@
                         <option value="Internet">Internet User</option>
                     </select>
                     <input type="submit" value="Generate">
+                   
                 </form>
             </section>
 
@@ -49,8 +51,8 @@
                             INTERNET USER</h2>
                     </section>
                     <section class="internet-mid">
-                        <h2>Name</h2>
-                        <p>For being able to look up 1+1, and finding angry tweeter users on the internet.</p>
+                        <span id="nameOutput">Name</span>
+                        <p>For being able to look up 1+1, and finding angry twitter users on the internet.</p>
                     </section>
                     <section class="internet-bot">
                         <section class="internet-bot-sign"><p>Googlethemselves</p> </section>

@@ -17,34 +17,40 @@ document.addEventListener('DOMContentLoaded', function () {
         changeCert(eventData.target.value);
     });
 
-    document.getElementById(`myform`).addEventListener(`submit`, function (eventData) {
-        eventData.preventDefault(); //stop page reload when form is submitted
-        console.log(eventData.target);
-        var formData = new FormData(eventData.target);
-        formData = Object.fromEntries(formData);
+    // document.getElementById(`myform`).addEventListener(`submit`, function (eventData) {
+    //     eventData.preventDefault(); //stop page reload when form is submitted
+    //     console.log(eventData.target);
+    //     var formData = new FormData(eventData.target);
+    //     formData = Object.fromEntries(formData);
 
-        //update certificate information when form is submitted:
-        let nameOutput = document.getElementById('nameOutput');
-        nameOutput.innerText = formData.name;
-    });
+    //     //update certificate information when form is submitted:
+    //     let nameOutput = document.getElementById('nameOutput');
+    //     nameOutput.innerText = formData.name;
+    // });
 
 
 
 
     function changeCert(value) {
-        let certificate = document.getElementById('test-section');
-        certificate.classList = ""; // clear classes on each function call
-        document.getElementById("internet").style.visibility = "hidden";
+        let certificate = document.getElementById('certificate');
+        certificate.classList = "";
+        let certTop = document.getElementById(`certificate-top-text`);
+        let certMid = document.getElementById(`certificate-mid-text`);
+        let certSign = document.getElementById(`certificate-bot-sign-text`);
+        let certDate = document.getElementById(`certificate-bot-date-text`);
+
         switch (value) {
             case 'Skill':
-                certificate.classList.add('test1');
-
+                certTop.innerText = `SKILL ISSUE`
+                certMid.innerText = `For typing "youre", using easy mode, and consistently using lowercase I. Honestly, Git Gud.`
                 break;
             case 'Comedian':
-                certificate.classList.add('test2');
+                certTop.innerText = `UNINTENTIONAL COMEDIAN`
+                certMid.innerText = `For being the center of every joke, even unexpectedly.`
                 break;
             case 'Internet':
-                document.getElementById("internet").style.visibility = "visible";
+                certTop.innerText = `INTERNET USER`
+                certMid.innerText = `For being able to look up 1+1, and finding angry redditors on the internet.`
                 break;
         }
         console.log(value)

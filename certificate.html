@@ -7,47 +7,52 @@
     <title>Certificate</title>
     <link rel="stylesheet" href="certificate.css">
     <script src="certificate.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inknut+Antiqua:wght@600&family=Lustria&family=Petit+Formal+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Make your Certificate</h1>
+    <!-- <h1>Make your Certificate</h1> -->
     <section class="pagewrapper">
-        <section class="leftside">
+        <section class="bottomside">
             <section class="form">
-                <form action="" id="myForm">
+                <form action="" id="myform">
                     <input type="text" name="name" id="name" placeholder="Enter Name Here"> <!--text box for name -->
 
                     <select name="type" id="type">
+                        <option value="Enter">Select a Option</option>
                         <option value="Skill">Skill Issue</option>
                         <option value="Comedian">Unintentional Comedian</option>
                         <option value="Internet">Internet User</option>
                     </select>
-                    <input type="submit" value="Generate">
+                    <input id="print" type="submit" value="Print">
 
                 </form>
             </section>
 
         </section>
 
-        <section class="rightside">
+        <section class="topside">
             <section id="certificate">
                 <section class="certificate-holder">
                     <section class="certificate-top">
-                        <h2>CERTIFICATE OF </h2>
-                        <h2 id="certificate-top-text">INTERNET USER</h2>
+                        <h2>CERTIFICATE OF</h2>
+                        <h2 id="certificate-top-text"></h2>
                     </section>
                     <section class="certificate-mid">
-                        <span id="nameOutput" class="visible">Name</span>
-                        <p id="certificate-mid-text">For being able to look up 1+1, and finding angry twitter users on the internet.</p>
+                        <span id="nameOutput" class="visible"></span>
+                        <p id="certificate-mid-text"></p>
                     </section>
                     <section class="certificate-bot">
                         <section class="certificate-bot-sign">
-                            <p id="certificate-bot-sign-text">Googlethemselves</p>
+                            <p id="certificate-bot-sign-text"></p>
                         </section>
-                        <section> <img class="certificate-image" src="/images/internet-dino.png" alt="Dino"></section>
+                        <section id="certificate-image">
+                             </section>
                         <section class="certificate-bot-date">
-                            <p id="certificate-bot-date-text">Date</p>
+                            <p id="certificate-bot-date-text"></p>
                         </section>
                     </section>
                 </section>

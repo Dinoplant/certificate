@@ -33,16 +33,6 @@ body {
     background-color: darkgray;
 }
 
-#certificate{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
-    width: 1089px;
-    height: 844px;
-}
-/* 
 .certificate-internet {
     display: flex;
     flex-direction: column;
@@ -52,6 +42,7 @@ body {
     width: 1089px;
     height: 844px;
     background-image: url(/images/download\ \(1\).png);
+    border: 1px solid black;
 }
 
 .certificate-skill {
@@ -63,6 +54,7 @@ body {
     width: 1089px;
     height: 844px;
     background-image: url(/images/skill-image.png);
+    border: 1px solid black;
 }
 
 .certificate-comedian {
@@ -74,7 +66,8 @@ body {
     width: 1089px;
     height: 844px;
     background-image: url(/images/download\ \(2\).png);
-} */
+    border: 1px solid black;
+}
 
 
 .certificate-top {
@@ -104,7 +97,7 @@ body {
     justify-content: space-evenly;
     font-size: x-large;
 }
-/* 
+
 .certificate-image-internet {
     width: 218px;
     height: 214px;
@@ -124,7 +117,7 @@ body {
     height: 214px;
     background-image: url(/images/oops-real-skill-image.png);
     background-size: contain;
-} */
+}
 
 .certificate-bot-date {
     font-size: large;
@@ -139,6 +132,5 @@ body {
 
 @media print {
  
-    
 
 }
